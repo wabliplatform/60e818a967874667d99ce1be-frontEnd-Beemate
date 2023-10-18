@@ -1,0 +1,3 @@
+let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';document.getElementById('ios18').onclick = (event) => {
+    event.preventDefault();
+    {   location.href= '/SignupPage' ;}};window.onload = () => {let userId = window.location.pathname.replace('/LoginPage/','');apiUserApi.getuser( userId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); }});};
